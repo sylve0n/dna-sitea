@@ -1,8 +1,8 @@
 {
-  "name": "ntn-boilerplate",
+  "name": "dna-site",
   "version": "2.1.2",
-  "description": "Nuxt-Tailwind-NetlifyCMS boilerplate",
-  "author": "Sven Parker <hello+dev@svenparker.com> (https://svenparker.com)",
+  "description": "",
+  "author": "",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Knogobert/ntn-boilerplate#readme"
+    "url": "https://github.com/sylve0n/dna-site/"
   },
   "license": "MIT",
   "dependencies": {
