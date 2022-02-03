@@ -1,5 +1,5 @@
-site_url: https://dna-app.netlify.app/
-logo_url: https://dna-app.netlify.app/icon.png
+site_url: https://dna-site.netlify.app/
+logo_url: https://dna-site.netlify.app/icon.png
 
 publish_mode: editorial_workflow
 backend:
