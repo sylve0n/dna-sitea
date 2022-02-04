@@ -59,6 +59,13 @@ export default {
    ** Customize the progress-bar color
    */
   loading: { color: '#526488' },
+
+  components: {
+    dirs: [
+      '~/components',
+      '~/components/UI'
+    ]
+  },
   /*
    ** Plugins to load before mounting the App
    */
@@ -66,7 +73,7 @@ export default {
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/svg', '@nuxtjs/pwa'],
+  buildModules: ['@nuxtjs/color-mode', '@nuxtjs/svg', '@nuxtjs/pwa', '@nuxtjs/style-resources'],
   /*
    ** Nuxt.js modules
    */
@@ -111,7 +118,7 @@ export default {
   },
   pwa: {
     icon: {
-      source: 'static/doling-circle.png',
+      source: 'static/img/doling-circle.png',
       filename: 'doling-circle.png'
     },
     manifest: { name: SITE_INFO.sitename || process.env.npm_package_name || '', lang: process.env.lang },

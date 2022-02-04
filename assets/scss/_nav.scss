@@ -1,0 +1,86 @@
+ .nav {
+    position: fixed;
+    background-color: white;
+    color: $primary;
+    border-bottom: 2px solid $primary;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 2rem;
+    justify-content: center;
+    transition: top 700ms ease-in-out;
+    @include breakpoint(medium) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    &.scroll-up, &:focus-within {
+        top: 0;
+    }
+    &.scroll-down {
+        top: -100%;
+    }
+}
+.nav-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    img {
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        border-radius: 50%;
+        border: 2px solid $primary;
+        box-shadow: 0 0 0 3px $secondary;
+        margin-right: 1rem;
+        flex-shrink: 0;
+    }
+}
+.nav-logo__text {
+    font-weight: 800;
+    margin: 0;
+    color: $primary;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 1em;
+    padding: 0;
+    @include breakpoint(medium) {
+        margin: -0.25em 0 0;
+    }
+}
+
+.nav-link {
+    margin-left: 1.5em;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.nav-link--social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    a svg {
+        width: 30px;
+        height: 30px;
+        margin-right: 0.5rem;
+        transition: 0.2s background-color, 0.2s transform;
+        g path {
+            fill: $secondary;
+            stroke: $primary;
+        }
+        &:hover {
+            transform: translate(0.1em, 0.05em);
+            background-color: #fff;
+            g path {
+                fill: $primary;
+                stroke: $secondary;
+            }
+        }
+    }
+  }

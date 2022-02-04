@@ -1,25 +1,22 @@
 <template>
   <main>
-    <section class="self-center flex flex-col flex-1 items-center justify-center">
-      <h1 class="title text-center">Nuxt — Tailwind — Netlify CMS</h1>
-      <h2 class="subtitle text-center">Boilerplate</h2>
-    </section>
-
+    <Hero />
     <section class="mt-8">
       <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Latest blog post</h3>
+      <button class="btn">Button</button>
       <posts post-type="blog" :amount="1" />
     </section>
   </main>
 </template>
 <script>
 export default {
-  name: 'RedirectSignup',
-  methods: {
-    redirectSignup() {
-      if (window.location.hash.includes('_token=')) {
-        window.location.replace('/admin/' + window.location.hash)
-      }
-    },
+  head() {
+    return {
+      script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],
+    }
   },
 }
 </script>
+<style lang="scss" scoped>
+  
+</style>
