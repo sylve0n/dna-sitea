@@ -80,3 +80,40 @@ collections:
           summary: '{{fields.image}}',
           field: { label: 'Image', name: 'image', widget: 'image' },
         }
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Home"
+        name: "home"
+        file: "content/site/home.yml"
+        fields:
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            collapsed: true
+            fields:
+              - {label: "Hero Title", name: "title", widget: "string"}
+              - {label: "Hero Subtitle", name: "subtitle", widget: "string"}
+              - {label: "Hero Image", name: "heroImage", widget: "image"}
+      - label: "About"
+        name: "about"
+        file: "content/site/about.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Hero Image, name: heroImage, widget: image}
+          - {label: Hero Title, name: heroTitle, widget: string}
+          - {label: Hero Subtitle, name: heroSubtitle, widget: string}
+      - label: "History"
+        name: "History"
+        file: "content/site/locations.yml"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Intro, name: intro, widget: markdown}
+          - {label: Body Content, name: content, widget: markdown}
+          - label: Gallery
+            name: gallery
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Image, name: image, widget: image}
+              - {label: Description, name: description, widget: text}

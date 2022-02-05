@@ -1,15 +1,20 @@
 <template>
   <main>
-    <Hero />
-    <section class="mt-8">
-      <h3 class="text-primary-600 dark:text-primary-400 max-w-5xl mx-auto">Latest blog post</h3>
-      <button class="btn">Button</button>
-      <posts post-type="blog" :amount="1" />
-    </section>
+    <Hero :title="page.hero.title" :subtitle="page.hero.subtitle" :image="page.hero.heroImage" />
   </main>
 </template>
 <script>
+import Hero from '~/components/Hero.vue'
 export default {
+  components: {
+    Hero,
+  },
+  async asyncData({ $content }) {
+    const page = await $content('site/home').fetch()
+    return {
+      page,
+    }
+  },
   head() {
     return {
       script: [{ src: 'https://identity.netlify.com/v1/netlify-identity-widget.js' }],

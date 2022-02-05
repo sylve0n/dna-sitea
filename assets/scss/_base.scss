@@ -1,10 +1,8 @@
 // * base styles
-html, body {
+html, body, #__nuxt, #__layout {
   height: 100%;
 }
 body {
-  display: flex;
-  flex-direction: column;
   font-family: $sans;
   font-size: $browser-context * 1px; // ! the multiplication enforces pixels, even if you don't specify
   color: $text;
@@ -19,11 +17,6 @@ body {
     // add this class with javascript when you launch a modal or something, to prevent background scrolling
     overflow: hidden;
   }
-}
-
-.content {
-  flex: 1 0 auto;
-  position: relative;
 }
   
 // responsive images
@@ -59,4 +52,11 @@ html {
 
 main {
   padding-top: 53px;
+  flex: 1 0 auto;
+}
+
+.content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,8 +1,15 @@
 <template>
-  <footer>
+  <footer class="footer">
     <ul class="footer-links">
-      <li>Footer Link</li>
-      <li>Footer Link</li>
+      <li class="footer-link">
+        <nuxt-link to="/">Home</nuxt-link>
+      </li>
+      <li class="footer-link">
+        <nuxt-link to="/about">About</nuxt-link>
+      </li>
+      <li class="footer-link">
+        <nuxt-link to="/history">History</nuxt-link>
+      </li>
     </ul>
   </footer>
 </template>
@@ -12,14 +19,3 @@ export default {
   name: 'Footer',
 }
 </script>
-<style lang="scss" scoped>
-    footer {
-        height: 200px;
-        background-color: $green;
-        flex-shrink: 0;
-        margin-bottom: 0;
-    }
-    .footer-links {
-        margin: 0;
-    }
-</style>

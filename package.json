@@ -4,7 +4,7 @@
   "description": "",
   "author": "",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "nuxt --devtools",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
