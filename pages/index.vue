@@ -1,6 +1,13 @@
 <template>
   <main>
     <Hero :title="page.hero.title" :subtitle="page.hero.subtitle" :image="page.hero.heroImage" />
+    <div class="homepage-content">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis sapiente repudiandae cum magni accusantium
+        mollitia aspernatur labore, non minus ab quas consequuntur sed dolor dignissimos neque atque perspiciatis
+        tenetur quod?
+      </p>
+    </div>
   </main>
 </template>
 <script>

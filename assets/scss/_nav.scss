@@ -1,18 +1,19 @@
  .nav {
     flex-shrink: 0;
-    position: fixed;
+    // position: fixed;
     background-color: white;
     color: $primary;
     border-bottom: 2px solid $primary;
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 0.5rem 2rem;
+    padding: 0.5rem;
     justify-content: center;
     transition: top 700ms ease-in-out;
     @include breakpoint(medium) {
       flex-direction: row;
       justify-content: space-between;
+      padding: 0.5rem 2rem;
     }
     &.scroll-up, &:focus-within {
         top: 0;
@@ -56,7 +57,7 @@
 }
 
 .nav-link {
-    margin-left: 1.5em;
+    margin-left: 1em;
     &:first-child {
         margin-left: 0;
     }
