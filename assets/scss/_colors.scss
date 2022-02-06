@@ -1,5 +1,8 @@
-$green: #284f16;
+$green: #76912f;
+$dgreen: #284f16;
 $lgreen: #659156;
+$tan: #f7e6aa;
+$red: #a9493c;
 
 $black: #0c0f0a;
 $dgray: #232828;
@@ -12,6 +15,6 @@ $text: $dgray;
 $text-light: #fff;
 $error: red;
 $primary: $green;
-$secondary: $lgreen;
+$secondary: $tan;
 $clickable: $green;
 $clickable-hover: lighten($green, 20%);

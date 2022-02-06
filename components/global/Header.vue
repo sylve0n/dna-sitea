@@ -11,13 +11,13 @@
     </div>
     <ul class="nav-links" id="navLinks">
       <li class="nav-link">
-        <nuxt-link class="btn" to="/">Home</nuxt-link>
+        <nuxt-link class="" to="/">Home</nuxt-link>
       </li>
       <li class="nav-link">
-        <nuxt-link class="btn" to="/about">About</nuxt-link>
+        <nuxt-link class="" to="/about">About</nuxt-link>
       </li>
       <li class="nav-link">
-        <nuxt-link class="btn" to="/blog">History</nuxt-link>
+        <nuxt-link class="" to="/blog">History</nuxt-link>
       </li>
       <li class="nav-link nav-link--social">
         <a href="https://nextdoor.com/neighborhood/doling--springfield--mo/" rel="noreferrer noopener">

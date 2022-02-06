@@ -1,8 +1,8 @@
  .nav {
     flex-shrink: 0;
-    // position: fixed;
-    background-color: white;
-    color: $primary;
+    position: fixed;
+    background-color: rgba(169, 73, 60, 0.95);
+    color: white;
     border-bottom: 2px solid $primary;
     width: 100%;
     display: flex;
@@ -41,7 +41,7 @@
 .nav-logo__text {
     font-weight: 800;
     margin: 0;
-    color: $primary;
+    // color: $primary;
 }
 .nav-links {
     display: flex;

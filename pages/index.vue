@@ -1,6 +1,17 @@
 <template>
   <main>
     <Hero :title="page.hero.title" :subtitle="page.hero.subtitle" :image="page.hero.heroImage" />
+    <div class="tricolor">
+      <div class="tricolor__block">
+        <h1 class="p">Block One</h1>
+      </div>
+      <div class="tricolor__block">
+        <h1 class="p">Block Two</h1>
+      </div>
+      <div class="tricolor__block">
+        <h1 class="p">Block Three</h1>
+      </div>
+    </div>
     <div class="homepage-content">
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis sapiente repudiandae cum magni accusantium
