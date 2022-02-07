@@ -26,18 +26,21 @@ export default {
 </script>
 <style lang="scss" scoped>
   .hero {
-    padding: 1rem 2rem;
+    padding: 20vh 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-size: cover;
     background-position: center;
-    height: 350px;
+    height: 500px;
     max-height: 80vh;
     background-attachment: fixed;
     .title {
       margin-top: 0;
       margin-bottom: 0.5em;
+    }
+    @include breakpoint(medium) {
+      padding: 20vh 2rem 1rem;
     }
   }
 </style>

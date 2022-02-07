@@ -95,6 +95,15 @@ collections:
               - {label: "Hero Title", name: "title", widget: "string"}
               - {label: "Hero Subtitle", name: "subtitle", widget: "string"}
               - {label: "Hero Image", name: "heroImage", widget: "image"}
+          - label: "Tricolor Blocks"
+            name: "tricolor"
+            widget: list
+            min: 3
+            max: 3
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Subtitle, name: subtitle, widget: string}
+              - {label: Link, name: link, widget: string}
       - label: "About"
         name: "about"
         file: "content/site/about.yml"

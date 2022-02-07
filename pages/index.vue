@@ -2,15 +2,13 @@
   <main>
     <Hero :title="page.hero.title" :subtitle="page.hero.subtitle" :image="page.hero.heroImage" />
     <div class="tricolor">
-      <div class="tricolor__block">
-        <h1 class="p">Block One</h1>
-      </div>
-      <div class="tricolor__block">
-        <h1 class="p">Block Two</h1>
-      </div>
-      <div class="tricolor__block">
-        <h1 class="p">Block Three</h1>
-      </div>
+      <TricolorBlock
+        v-for="(block, index) in page.tricolor"
+        :key="index"
+        :title="block.title"
+        :subtitle="block.subtitle"
+        :link="block.link"
+      />
     </div>
     <div class="homepage-content">
       <p>
@@ -23,9 +21,11 @@
 </template>
 <script>
 import Hero from '~/components/Hero.vue'
+import TricolorBlock from '~/components/TricolorBlock.vue'
 export default {
   components: {
     Hero,
+    TricolorBlock,
   },
   async asyncData({ $content }) {
     const page = await $content('site/home').fetch()

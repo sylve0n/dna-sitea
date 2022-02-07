@@ -2,3 +2,13 @@ hero:
   title: Doling Neighborhood
   subtitle: Subtitle Text
   heroImage: https://source.unsplash.com/random
+tricolor:
+  - title: Title One
+    subtitle: Subtitle One
+    link: /
+  - title: Title Two
+    subtitle: Subtitle Two
+    link: /
+  - title: Title Three
+    subtitle: Subtitle Three
+    link: /
