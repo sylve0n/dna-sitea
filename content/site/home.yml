@@ -7,7 +7,7 @@ tricolor:
     subtitle: Subtitle One
     link: /
   - title: Title Two
-    subtitle: Subtitle Two
+    subtitle: The second subtitle, this has more text than the first subtitle.
     link: /
   - title: Title Three
     subtitle: Subtitle Three
