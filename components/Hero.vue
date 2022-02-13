@@ -26,7 +26,7 @@ export default {
 </script>
 <style lang="scss" scoped>
   .hero {
-    padding: 20vh 0.5rem 1rem;
+    padding: 76px 0.5rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,7 +40,7 @@ export default {
       margin-bottom: 0.5em;
     }
     @include breakpoint(medium) {
-      padding: 20vh 2rem 1rem;
+      padding: 76px 2rem 1rem;
     }
   }
 </style>

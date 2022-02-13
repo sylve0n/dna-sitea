@@ -1,9 +1,9 @@
 <template>
   <header class="navbar" aria-label="Main Menu">
-    <div class="navbar__logo">
-      <nuxt-link tag="h1" class="navbar__heading h4" to="/" id="navTitle">Doling Neighborhood Association</nuxt-link>
-      <img src="/img/tree-graphic.png" alt="Drawing of tree with bench underneath" aria-labelledby="navTitle" />
-    </div>
+    <nuxt-link tag="h1" class="navbar__heading h4" to="/">
+      Doling Neighborhood Association
+      <img src="/img/tree-graphic.png" alt="" />
+    </nuxt-link>
     <nav class="navbar__main-nav">
       <button class="menu-toggle" id="menuToggle" aria-expanded="false" v-on:click="toggleMenu" tab-index="1">
         <span class="sr-only">Menu</span>

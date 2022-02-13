@@ -101,12 +101,12 @@ sup {
 
 .title {
   color: $green;
-  text-shadow: textShadow(0.25, 6, $dgreen);
+  text-shadow: textShadow(0.25, 3, $dgreen);
   background-color: $tan;
 }
 
 .subtitle {
   color: $tan;
-  text-shadow: textShadow(0.25, 6, $red);
+  text-shadow: textShadow(0.25, 3, $brown);
   background-color: $green;
 }
