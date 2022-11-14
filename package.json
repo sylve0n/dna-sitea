@@ -30,7 +30,7 @@
     "netlify-cli": "^8.15.3",
     "nuxt-purgecss": "^1.0.0",
     "prettier": "^2.5.1",
-    "sass-loader": "10.1.1",
+    "sass-loader": "13.2.0",
     "vue-content-placeholders": "^0.2.1"
   }
 }
