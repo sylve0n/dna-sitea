@@ -1,12 +1,12 @@
 hero:
   title: Doling Neighborhood
-  subtitle: Subtitle Text
+  subtitle: Subtitle Text With More Words
   heroImage: https://source.unsplash.com/random
 tricolor:
   - title: Title One
     subtitle: Subtitle One
     link: /
-  - title: Title Two
+  - title: Title Two 2
     subtitle: The second subtitle, this has more text than the first subtitle.
     link: /
   - title: Title Three
